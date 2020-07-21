@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                         Log.e(LOG_TAG, "prepare() failed");
                     }
                     mRecorder.start();
-                    Toast.makeText(getApplicationContext(), "Recording Started", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Iniciando Grabacion", Toast.LENGTH_LONG).show();
                 }
                 else
                 {
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 mRecorder.stop();
                 mRecorder.release();
                 mRecorder = null;
-                Toast.makeText(getApplicationContext(), "Recording Stopped", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Grabacion Detenida", Toast.LENGTH_LONG).show();
             }
         });
         playbtn.setOnClickListener(new View.OnClickListener() {
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                     mPlayer.setDataSource(mFileName);
                     mPlayer.prepare();
                     mPlayer.start();
-                    Toast.makeText(getApplicationContext(), "Recording Started Playing", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Reproduciendo Grabacion", Toast.LENGTH_LONG).show();
                 } catch (IOException e) {
                     Log.e(LOG_TAG, "prepare() failed");
                 }
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                 startbtn.setEnabled(true);
                 playbtn.setEnabled(true);
                 stopplay.setEnabled(false);
-                Toast.makeText(getApplicationContext(),"Playing Audio Stopped", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Deteniendo Reproduccion", Toast.LENGTH_SHORT).show();
             }
         });
     }
