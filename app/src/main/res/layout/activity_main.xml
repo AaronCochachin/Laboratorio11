@@ -8,23 +8,23 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="120dp"
-        android:text="Start Recording" />
+        android:text="Iniciar Grabacion" />
     <Button
         android:id="@+id/btnStop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
-        android:text="Stop Recording" />
+        android:text="Detener Grabacion" />
     <Button
         android:id="@+id/btnPlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
-        android:text="Play Recording" />
+        android:text="Repreducir Grabacion" />
     <Button
         android:id="@+id/btnStopPlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
-        android:text="Stop Playing" />
+        android:text="Detener Reproduccion" />
 </LinearLayout>
